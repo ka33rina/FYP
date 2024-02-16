@@ -4,14 +4,23 @@ project:
 website:
   title: "FYP - 32_Step_Ahead_Solutions"
   navbar:
-    left:
+    left: 
+      - text: Proposal
+        menu: 
+          - text: Our Proposal 
+          
+      - text: Research 
+        menu: 
+          - text: Data Sets 
+    
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: Flatly
     css: styles.css
     toc: true
 
