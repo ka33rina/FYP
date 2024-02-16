@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "FYP - 32_Step_Ahead_Solutions",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome to Our Final Year Project Website!\n\nGreetings and welcome to our final year project website!\nWe are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#greetings-and-welcome-to-our-final-year-project-website",
+    "href": "index.html#greetings-and-welcome-to-our-final-year-project-website",
+    "title": "FYP - 32_Step_Ahead_Solutions",
+    "section": "",
+    "text": "We are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates."
   }
 ]

@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "FYP - 32_Step_Ahead_Solutions"
+  title: "32_Step_Ahead_Solutions"
   navbar:
     left: 
       - text: Proposal
@@ -20,7 +20,7 @@ website:
 
 format:
   html:
-    theme: Flatly
+    theme: lumen
     css: styles.css
     toc: true
 
