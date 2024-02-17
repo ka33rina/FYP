@@ -12,7 +12,7 @@ website:
           
       - text: Initial Research  
         menu: 
-          - text: Data Sets 
+          - text: On-the-ground Research
             href: "Initial_Research/On-the-ground_Research.html"
           
       - text: Analysis 
