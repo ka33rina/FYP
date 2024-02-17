@@ -4,7 +4,7 @@ title: "FYP - 32_Step_Ahead_Solutions"
 
 # **Welcome to Our Final Year Project Website!**
 
-![](images/Screenshot 2024-02-16 223433-01.png)
+![](images/Screenshot%202024-02-16%20223433-01.png)
 
 Greetings and welcome to our final year project website!
 

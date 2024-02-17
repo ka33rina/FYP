@@ -7,11 +7,20 @@ website:
     left: 
       - text: Proposal
         menu: 
-          - text: Our Proposal 
+          - text: Our Proposal
+            href: "Proposal/fyp_proposal.html"
           
-      - text: Research 
+      - text: Initial Research  
         menu: 
           - text: Data Sets 
+            href: "Initial_Research/"
+          
+      - text: Analysis 
+        menu: 
+          - text: Demographics Analysis
+            #href: 
+          - text: Geospatial Analysis
+            #href: 
     
     right:
       - href: index.qmd
