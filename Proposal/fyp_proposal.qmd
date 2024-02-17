@@ -49,7 +49,7 @@ The project aligns with the goal of creating an inclusive and accessible urban e
 
 -   More efficient use of untapped land in Singapore, given the limited amount of land available.
 
-### **Scope** 
+### **Scope**
 
 The scope of this project centres around the main tasks that we will need to perform:
 
@@ -65,13 +65,13 @@ The scope of this project centres around the main tasks that we will need to per
 
 # Project Plan
 
-## Team Conduct 
+## Team Conduct
 
 We would be utilising Scrum for our project with James as Scrum Master. We would have time-boxed sprints of 2 weeks each time and use Jira as our productivity tool for our scrum boards. Additionally, Sprint Retrospectives will be conducted at the end of each Sprint to review team performance, reflect on what went well, and improve on teamwork and collaboration for subsequent sprints.
 
-## Resources  
+## Resources
 
-### Datasets 
+### Datasets
 
 -   **GeoFabrik/OpenStreetMap: [Shapefiles](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html)** containing information about POIs, Transport Infrastructure, Roads & Paths, Essential Amenities, etc.
 
@@ -87,7 +87,7 @@ We would be utilising Scrum for our project with James as Scrum Master. We would
 
     -   [**Resident Population Aged 5 Years and Over by Planning Area of Residence**](https://www.singstat.gov.sg/publications/reference/cop2020/cop2020-sr2/census20_stat_release2) (Level of Difficulty in Performing Basic Activity in Specific Domain and Age Group, Singapore Census of Population 2020)
 
-### Technologies 
+### Technologies
 
 -   **Programming Languages:** Python (including pandas), HTML, CSS, JavaScript 
 
