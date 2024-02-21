@@ -1,0 +1,52 @@
+---
+title: "On-the-ground Research: Ang Mo Kio"
+date: "`r Sys.Date()`"
+format: html
+execute: 
+  message: false
+  warning: false
+  freeze: true
+editor: visual
+---
+
+# 1st On-the-ground Research
+
+Conducted on: 29/1/2024
+
+Members: James, Karina, Shanelle
+
+## Kebun Baru
+
+![](images/clipboard-94001109.png)
+
+### Locational Characteristic: 
+
+-   Northern part of Singapore 
+
+-   Quite hilly, numerous uphill walk 
+
+-   Most HDB building built in 1980s
+
+### Key Amenities 
+
+-   Mayflower MRT Station 
+
+-   Mayflower Market & Food Centre 
+
+-   Kebun Baru Community Club
+
+### Desired Lines:
+
+showing map layer/ distribution of desired lines
+
+### Observations: 
+
+#### In terms of walkability: 
+
+-   Desired paths are commonly found nearby existing traffic light crossroad
+
+    Assumption: Long waiting time for traffic lights reduce the patience of residents to cross safely
+
+-   Jaywalking are common within the neighborhood
+
+    Assumption: the current designed paths are not the most direct path → residents tend to find a shortcut by themselves
