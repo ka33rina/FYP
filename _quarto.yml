@@ -14,10 +14,20 @@ website:
         menu: 
           - text: On-the-ground Research
             href: "Initial_Research/On-the-ground_Research.html"
-          - text: Ang Mo Kio
-            href: "Initial_Research/AMK.html"
-          - text: Punggol
-            href: "Initial_Research/PG.html"
+            menu: 
+              - text: Ang Mo Kio
+                href: "Initial_Research/AMK.html"
+              - text: Punggol
+                href: "Initial_Research/PG.html"
+          - text: Literature Review
+            href: "Initial_Research/literature_review.html"
+            
+      - text: Data Exploration
+        menu: 
+          - text: BA
+            href: "Data Exploration/"
+          - text: SMT
+            href: "Data Exploration/"
           
       - text: Analysis 
         menu: 
