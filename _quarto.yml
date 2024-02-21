@@ -23,7 +23,7 @@ website:
       - text: Analysis 
         menu: 
           - text: Demographics Analysis
-            href: "Analysis/Demograpic Analysis/demo.html"
+            href: "Analysis/Demographic Analysis/demo.html"
           - text: Geospatial Analysis
             href: "Analysis/Geographic Analysis/Geographic-Analysis.html"
     

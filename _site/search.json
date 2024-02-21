@@ -56,11 +56,22 @@
     "text": "Resources\n\nDatasets\n\nGeoFabrik/OpenStreetMap: Shapefiles containing information about POIs, Transport Infrastructure, Roads & Paths, Essential Amenities, etc.\nURA datasets: for specific data related to desire lines and paths not found in traditional geospatial datasets (e.g. paths through HDB void decks)\nData.gov.sg: Geospatial data containing information about the Master Plan of Singapore (e.g. zoning, planning areas) and related census data.\nSingStat (example datasets):\n\nPopulation Trends (Singapore Residents by Planning Area, Subzone, Age Group, Sex and Type of Dwelling, Jun2023)\nResident Households By Type Of Dwelling(Type of Dwelling-Dwelling Count as at Jun2023 by Planning Area, Subzone)\nResident Population Aged 5 Years and Over by Planning Area of Residence (Level of Difficulty in Performing Basic Activity in Specific Domain and Age Group, Singapore Census of Population 2020)\n\n\n\n\nTechnologies\n\nProgramming Languages: Python (including pandas), HTML, CSS, JavaScript \nWeb Development Stack: WAMP, development libraries\nTools/Platforms: QGIS/ArcGIS, Jupyter Notebook, Tableau, GitHub, Jira\nTechniques: Clustering, Network Analysis & Centrality, Geoprocessing, Pedestrian Route Directness (PRD) ratio"
   },
   {
+    "objectID": "Initial_Research/On-the-ground_Research.html",
+    "href": "Initial_Research/On-the-ground_Research.html",
+    "title": "On-the-ground Research",
+    "section": "",
+    "text": "Through comprehensive on-the-ground research and interviews with residents, we have gathered valuable insights into the pedestrian experience and connectivity within these vibrant communities. Our analysis aims to delve into various aspects such as amenities, walking experience and transportation accessibility to identify areas for improvement and innovation.\nBelow, we will summarize our findings and analysis for Ang Mo Kio and Punggol, offering valuable insights into their current walkability status and potential avenues for enhancement. Stay tuned as we uncover key trends and opportunities to create more pedestrian-friendly and livable neighborhoods in Ang Mo Kio and Punggol.\n\nAng Mo Kio\n\n\n\n\n\n\n\nPunggol"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "23/24 T2 FYP - 32_Step_Ahead_Solutions",
     "section": "",
+<<<<<<< HEAD
     "text": "Greetings and welcome to our final year project website!\nWe are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates."
+=======
+    "text": "Welcome to Our Final Year Project Website!\n\nGreetings and welcome to our final year project website!\nWe are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates. :)"
+>>>>>>> 3a355d3709a217265fd5f6adbbb44d0e02d73f2b
   },
   {
     "objectID": "about.html",
@@ -70,11 +81,15 @@
     "text": "James\n\n\nKarina\n\n\nShanelle\n\n\nAmanda\n\n\nYao Quan\n\n\nAlvin"
   },
   {
-    "objectID": "Initial_Research/On-the-ground_Research.html",
-    "href": "Initial_Research/On-the-ground_Research.html",
-    "title": "On-the-ground Research",
+    "objectID": "Analysis/Demographic Analysis/demo.html",
+    "href": "Analysis/Demographic Analysis/demo.html",
+    "title": "Demo",
     "section": "",
+<<<<<<< HEAD
     "text": "Below, we will summarize our findings and analysis for Ang Mo Kio and Punggol, offering valuable insights into their current walkability status and potential avenues for enhancement. Stay tuned as we uncover key trends and opportunities to create more pedestrian-friendly and livable neighborhoods in Ang Mo Kio and Punggol.\n\nAng Mo Kio\n\n\n\n\n\n\n\nPunggol"
+=======
+    "text": "Demo"
+>>>>>>> 3a355d3709a217265fd5f6adbbb44d0e02d73f2b
   },
   {
     "objectID": "Initial_Research/AMK.html",
@@ -96,12 +111,15 @@
     "title": "On-the-ground Research: Punggol",
     "section": "",
     "text": "Punggol"
+<<<<<<< HEAD
+=======
   },
   {
     "objectID": "Analysis/Demographic Analysis/demo.html",
     "href": "Analysis/Demographic Analysis/demo.html",
     "title": "Demo",
     "section": "",
+<<<<<<< HEAD
     "text": "Demo"
   },
   {
@@ -110,5 +128,9 @@
     "title": "Geospatial Analysis using OneMap Data",
     "section": "",
     "text": "pacman::p_load(sf, sfdep, tmap, tidyverse, spdep)\n\nReading shapefiles that were exported from our qgis geopackage:\n\ndesired_lines <- st_read(dsn = \"data/geospatial\", \n                 layer = \"desired_lines\")\n\nReading layer `desired_lines' from data source \n  `/Users/shanellelam/Library/CloudStorage/OneDrive-SingaporeManagementUniversity/School/Year 3/chanelelele/fyp-netlify-shan/fyp netlify/Analysis/Geographic Analysis/data/geospatial' \n  using driver `ESRI Shapefile'\nSimple feature collection with 3904 features and 12 fields\nGeometry type: LINESTRING\nDimension:     XY\nBounding box:  xmin: 34031.82 ymin: 40392.88 xmax: 38881.06 ymax: 44812.07\nProjected CRS: SVY21 / Singapore TM\n\n\n\nplot(desired_lines)\n\n\n\n\n\ntarget_buildings <- st_read(dsn = \"data/geospatial\", \n                 layer = \"target_buildings\")\n\nReading layer `target_buildings' from data source \n  `/Users/shanellelam/Library/CloudStorage/OneDrive-SingaporeManagementUniversity/School/Year 3/chanelelele/fyp-netlify-shan/fyp netlify/Analysis/Geographic Analysis/data/geospatial' \n  using driver `ESRI Shapefile'\nSimple feature collection with 9554 features and 7 fields (with 1 geometry empty)\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 26581.25 ymin: 33134.58 xmax: 44722.63 ymax: 44778.11\nProjected CRS: SVY21 / Singapore TM\n\n\n\nplot(target_buildings)\n\n\n\n\n\nmpsz <- st_read(dsn = \"data/geospatial\",\n                layer = \"MP14_SUBZONE_WEB_PL\")\n\nReading layer `MP14_SUBZONE_WEB_PL' from data source \n  `/Users/shanellelam/Library/CloudStorage/OneDrive-SingaporeManagementUniversity/School/Year 3/chanelelele/fyp-netlify-shan/fyp netlify/Analysis/Geographic Analysis/data/geospatial' \n  using driver `ESRI Shapefile'\nSimple feature collection with 323 features and 15 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 2667.538 ymin: 15748.72 xmax: 56396.44 ymax: 50256.33\nProjected CRS: SVY21\n\n\n\nmpsz2 <- as_Spatial(mpsz)\n\n\nst_crs(mpsz2)\n\nCoordinate Reference System:\n  User input: SVY21 \n  wkt:\nPROJCRS[\"SVY21\",\n    BASEGEOGCRS[\"SVY21[WGS84]\",\n        DATUM[\"World Geodetic System 1984\",\n            ELLIPSOID[\"WGS 84\",6378137,298.257223563,\n                LENGTHUNIT[\"metre\",1]],\n            ID[\"EPSG\",6326]],\n        PRIMEM[\"Greenwich\",0,\n            ANGLEUNIT[\"Degree\",0.0174532925199433]]],\n    CONVERSION[\"unnamed\",\n        METHOD[\"Transverse Mercator\",\n            ID[\"EPSG\",9807]],\n        PARAMETER[\"Latitude of natural origin\",1.36666666666667,\n            ANGLEUNIT[\"Degree\",0.0174532925199433],\n            ID[\"EPSG\",8801]],\n        PARAMETER[\"Longitude of natural origin\",103.833333333333,\n            ANGLEUNIT[\"Degree\",0.0174532925199433],\n            ID[\"EPSG\",8802]],\n        PARAMETER[\"Scale factor at natural origin\",1,\n            SCALEUNIT[\"unity\",1],\n            ID[\"EPSG\",8805]],\n        PARAMETER[\"False easting\",28001.642,\n            LENGTHUNIT[\"metre\",1],\n            ID[\"EPSG\",8806]],\n        PARAMETER[\"False northing\",38744.572,\n            LENGTHUNIT[\"metre\",1],\n            ID[\"EPSG\",8807]]],\n    CS[Cartesian,2],\n        AXIS[\"(E)\",east,\n            ORDER[1],\n            LENGTHUNIT[\"metre\",1,\n                ID[\"EPSG\",9001]]],\n        AXIS[\"(N)\",north,\n            ORDER[2],\n            LENGTHUNIT[\"metre\",1,\n                ID[\"EPSG\",9001]]]]\n\n\nextracting study areas:\n\npg = mpsz2[mpsz2@data$PLN_AREA_N == \"PUNGGOL\",]\namk = mpsz2[mpsz2@data$PLN_AREA_N == \"ANG MO KIO\",]\n\n\n#par(mfrow=c(2,2), mar = c(4, 4, 2, 1))\n#plot(pg, main = \"Punggol\")\n#plot(amk, main = \"Ang Mo Kio\")"
+=======
+    "text": "Demographics population"
+>>>>>>> 18872be64c715a25072f33d783617cd62ff3ea6b
+>>>>>>> 3a355d3709a217265fd5f6adbbb44d0e02d73f2b
   }
 ]
