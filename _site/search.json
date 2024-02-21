@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "23/24 T2 FYP - 32_Step_Ahead_Solutions",
-    "section": "",
-    "text": "Welcome to Our Final Year Project Website!\n\nGreetings and welcome to our final year project website!\nWe are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Meet Our Team Members",
-    "section": "",
-    "text": "We are a dynamic team with 6 Information System students from SMU. Our team comprised of 3 students from 2 different majors: Business Analytics and Smart-City Management Technology.\n\nJames\n\n\nKarina\n\n\nShanelle\n\n\nAmanda\n\n\nYao Quan\n\n\nAlvin"
-  },
-  {
     "objectID": "Proposal/fyp_proposal.html",
     "href": "Proposal/fyp_proposal.html",
     "title": "Our Proposal",
@@ -68,6 +54,20 @@
     "title": "Our Proposal",
     "section": "Resources",
     "text": "Resources\n\nDatasets\n\nGeoFabrik/OpenStreetMap: Shapefiles containing information about POIs, Transport Infrastructure, Roads & Paths, Essential Amenities, etc.\nURA datasets: for specific data related to desire lines and paths not found in traditional geospatial datasets (e.g. paths through HDB void decks)\nData.gov.sg: Geospatial data containing information about the Master Plan of Singapore (e.g. zoning, planning areas) and related census data.\nSingStat (example datasets):\n\nPopulation Trends (Singapore Residents by Planning Area, Subzone, Age Group, Sex and Type of Dwelling, Jun2023)\nResident Households By Type Of Dwelling(Type of Dwelling-Dwelling Count as at Jun2023 by Planning Area, Subzone)\nResident Population Aged 5 Years and Over by Planning Area of Residence (Level of Difficulty in Performing Basic Activity in Specific Domain and Age Group, Singapore Census of Population 2020)\n\n\n\n\nTechnologies\n\nProgramming Languages: Python (including pandas), HTML, CSS, JavaScript \nWeb Development Stack: WAMP, development libraries\nTools/Platforms: QGIS/ArcGIS, Jupyter Notebook, Tableau, GitHub, Jira\nTechniques: Clustering, Network Analysis & Centrality, Geoprocessing, Pedestrian Route Directness (PRD) ratio"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "23/24 T2 FYP - 32_Step_Ahead_Solutions",
+    "section": "",
+    "text": "Welcome to Our Final Year Project Website!\n\nGreetings and welcome to our final year project website!\nWe are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Meet Our Team Members",
+    "section": "",
+    "text": "We are a dynamic team with 6 Information System students from SMU. Our team comprised of 3 students from 2 different majors: Business Analytics and Smart-City Management Technology.\n\nJames\n\n\nKarina\n\n\nShanelle\n\n\nAmanda\n\n\nYao Quan\n\n\nAlvin"
   },
   {
     "objectID": "Initial_Research/On-the-ground_Research.html",
