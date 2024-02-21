@@ -25,7 +25,7 @@ website:
           - text: Demographics Analysis
             href: "Analysis/Demographic Analysis/demo.html"
           - text: Geospatial Analysis
-            #href: 
+            href: "Analysis/Geographic Analysis/Geographic-Analysis.html"
     
     right:
       - href: index.qmd
