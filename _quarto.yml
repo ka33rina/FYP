@@ -12,15 +12,15 @@ website:
           
       - text: Initial Research  
         menu: 
-          - text: On-the-ground Research
-            href: "Initial_Research/On-the-ground_Research.html"
-            menu: 
-              - text: Ang Mo Kio
-                href: "Initial_Research/AMK.html"
-              - text: Punggol
-                href: "Initial_Research/PG.html"
           - text: Literature Review
             href: "Initial_Research/literature_review.html"
+          - text: On-the-ground Research
+            href: "Initial_Research/On-the-ground_Research.html"
+          - text: Ang Mo Kio
+            href: "Initial_Research/AMK.html"
+          - text: Punggol
+            href: "Initial_Research/PG.html"
+          
             
       - text: Data Exploration
         menu: 
@@ -39,8 +39,8 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About us 
+      #href: about.qmd
+      #text: About us 
 
 format:
   html:
