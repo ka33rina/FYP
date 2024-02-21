@@ -26,6 +26,7 @@ plot(desired_lines)
 target_buildings <- st_read(dsn = "data/geospatial", 
                  layer = "target_buildings")
 ```
+
 ```{r}
 plot(target_buildings)
 ```
@@ -44,6 +45,7 @@ st_crs(mpsz2)
 ```
 
 extracting study areas:
+
 ```{r}
 pg = mpsz2[mpsz2@data$PLN_AREA_N == "PUNGGOL",]
 amk = mpsz2[mpsz2@data$PLN_AREA_N == "ANG MO KIO",]
