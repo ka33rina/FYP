@@ -67,7 +67,7 @@
     "href": "index.html",
     "title": "23/24 T2 FYP - 32_Step_Ahead_Solutions",
     "section": "",
-    "text": "Welcome to Our Final Year Project Website!\n\nGreetings and welcome to our final year project website!\nWe are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates."
+    "text": "Welcome to Our Final Year Project Website!\n\nGreetings and welcome to our final year project website!\nWe are a dynamic interdisciplinary team from Singapore Management University (SMU), comprising talented individuals from both the Business Analytics (BA) and Smart-City Management Technology (SMT) majors. Together, we are collaborating with the Urban Redevelopment Authority (URA) to revolutionize urban walkability within Singapore’s estates. :)"
   },
   {
     "objectID": "about.html",
@@ -103,5 +103,15 @@
     "title": "On-the-ground Research: Punggol",
     "section": "",
     "text": "Punggol"
+<<<<<<< HEAD
+=======
+  },
+  {
+    "objectID": "Analysis/Demographic Analysis/demo.html",
+    "href": "Analysis/Demographic Analysis/demo.html",
+    "title": "Demo",
+    "section": "",
+    "text": "Demographics population"
+>>>>>>> 18872be64c715a25072f33d783617cd62ff3ea6b
   }
 ]
