@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-02-22">
+<meta name="dcterms.date" content="2024-02-23">
 
 <title>32_Step_Ahead_Solutions - Geospatial Analysis using OneMap Data</title>
 <style>
@@ -133,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-initial-research">    
         <li>
-    <a class="dropdown-item" href="../../Initial_Research/literature_review.html" rel="" target="">
+    <a class="dropdown-item" href="../../Initial_Research/Literature_Review.html" rel="" target="">
  <span class="dropdown-text">Literature Review</span></a>
   </li>  
         <li>
@@ -222,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 22, 2024</p>
+      <p class="date">February 23, 2024</p>
     </div>
   </div>
   
@@ -236,14 +236,128 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Data Analysis</h1>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(sf, sfdep, tmap, tidyverse, spdep)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>package 'proxy' successfully unpacked and MD5 sums checked
+package 'e1071' successfully unpacked and MD5 sums checked
+package 'wk' successfully unpacked and MD5 sums checked
+package 'classInt' successfully unpacked and MD5 sums checked
+package 'DBI' successfully unpacked and MD5 sums checked
+package 'Rcpp' successfully unpacked and MD5 sums checked
+package 's2' successfully unpacked and MD5 sums checked
+package 'units' successfully unpacked and MD5 sums checked
+package 'sf' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+    C:\Users\alvin\AppData\Local\Temp\RtmpSIDjdQ\downloaded_packages
+package 'spData' successfully unpacked and MD5 sums checked
+package 'deldir' successfully unpacked and MD5 sums checked
+package 'sp' successfully unpacked and MD5 sums checked
+package 'spdep' successfully unpacked and MD5 sums checked
+package 'sfdep' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+    C:\Users\alvin\AppData\Local\Temp\RtmpSIDjdQ\downloaded_packages
+package 'utf8' successfully unpacked and MD5 sums checked
+package 'fansi' successfully unpacked and MD5 sums checked
+package 'pillar' successfully unpacked and MD5 sums checked
+package 'pkgconfig' successfully unpacked and MD5 sums checked
+package 'colorspace' successfully unpacked and MD5 sums checked
+package 'gtable' successfully unpacked and MD5 sums checked
+package 'isoband' successfully unpacked and MD5 sums checked
+package 'tibble' successfully unpacked and MD5 sums checked
+package 'lazyeval' successfully unpacked and MD5 sums checked
+package 'terra' successfully unpacked and MD5 sums checked
+package 'farver' successfully unpacked and MD5 sums checked
+package 'labeling' successfully unpacked and MD5 sums checked
+package 'munsell' successfully unpacked and MD5 sums checked
+package 'ggplot2' successfully unpacked and MD5 sums checked
+package 'gridExtra' successfully unpacked and MD5 sums checked
+package 'geometries' successfully unpacked and MD5 sums checked
+package 'jsonify' successfully unpacked and MD5 sums checked
+package 'rapidjsonr' successfully unpacked and MD5 sums checked
+package 'sfheaders' successfully unpacked and MD5 sums checked
+package 'lwgeom' successfully unpacked and MD5 sums checked
+package 'dichromat' successfully unpacked and MD5 sums checked
+package 'XML' successfully unpacked and MD5 sums checked
+package 'crosstalk' successfully unpacked and MD5 sums checked
+package 'leaflet.providers' successfully unpacked and MD5 sums checked
+package 'png' successfully unpacked and MD5 sums checked
+package 'raster' successfully unpacked and MD5 sums checked
+package 'scales' successfully unpacked and MD5 sums checked
+package 'viridis' successfully unpacked and MD5 sums checked
+package 'geojsonsf' successfully unpacked and MD5 sums checked
+package 'tmaptools' successfully unpacked and MD5 sums checked
+package 'stars' successfully unpacked and MD5 sums checked
+package 'RColorBrewer' successfully unpacked and MD5 sums checked
+package 'viridisLite' successfully unpacked and MD5 sums checked
+package 'htmlwidgets' successfully unpacked and MD5 sums checked
+package 'widgetframe' successfully unpacked and MD5 sums checked
+package 'leaflet' successfully unpacked and MD5 sums checked
+package 'leafsync' successfully unpacked and MD5 sums checked
+package 'leafem' successfully unpacked and MD5 sums checked
+package 'abind' successfully unpacked and MD5 sums checked
+package 'tmap' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+    C:\Users\alvin\AppData\Local\Temp\RtmpSIDjdQ\downloaded_packages
+package 'bit' successfully unpacked and MD5 sums checked
+package 'ps' successfully unpacked and MD5 sums checked
+package 'rematch' successfully unpacked and MD5 sums checked
+package 'bit64' successfully unpacked and MD5 sums checked
+package 'prettyunits' successfully unpacked and MD5 sums checked
+package 'processx' successfully unpacked and MD5 sums checked
+package 'backports' successfully unpacked and MD5 sums checked
+package 'generics' successfully unpacked and MD5 sums checked
+package 'blob' successfully unpacked and MD5 sums checked
+package 'tidyselect' successfully unpacked and MD5 sums checked
+package 'data.table' successfully unpacked and MD5 sums checked
+package 'gargle' successfully unpacked and MD5 sums checked
+package 'uuid' successfully unpacked and MD5 sums checked
+package 'cellranger' successfully unpacked and MD5 sums checked
+package 'ids' successfully unpacked and MD5 sums checked
+package 'rematch2' successfully unpacked and MD5 sums checked
+package 'cpp11' successfully unpacked and MD5 sums checked
+package 'timechange' successfully unpacked and MD5 sums checked
+package 'systemfonts' successfully unpacked and MD5 sums checked
+package 'textshaping' successfully unpacked and MD5 sums checked
+package 'vroom' successfully unpacked and MD5 sums checked
+package 'tzdb' successfully unpacked and MD5 sums checked
+package 'progress' successfully unpacked and MD5 sums checked
+package 'callr' successfully unpacked and MD5 sums checked
+package 'selectr' successfully unpacked and MD5 sums checked
+package 'broom' successfully unpacked and MD5 sums checked
+package 'conflicted' successfully unpacked and MD5 sums checked
+package 'dbplyr' successfully unpacked and MD5 sums checked
+package 'dplyr' successfully unpacked and MD5 sums checked
+package 'dtplyr' successfully unpacked and MD5 sums checked
+package 'forcats' successfully unpacked and MD5 sums checked
+package 'googledrive' successfully unpacked and MD5 sums checked
+package 'googlesheets4' successfully unpacked and MD5 sums checked
+package 'haven' successfully unpacked and MD5 sums checked
+package 'hms' successfully unpacked and MD5 sums checked
+package 'httr' successfully unpacked and MD5 sums checked
+package 'lubridate' successfully unpacked and MD5 sums checked
+package 'modelr' successfully unpacked and MD5 sums checked
+package 'ragg' successfully unpacked and MD5 sums checked
+package 'readr' successfully unpacked and MD5 sums checked
+package 'readxl' successfully unpacked and MD5 sums checked
+package 'reprex' successfully unpacked and MD5 sums checked
+package 'rvest' successfully unpacked and MD5 sums checked
+package 'tidyr' successfully unpacked and MD5 sums checked
+package 'xml2' successfully unpacked and MD5 sums checked
+package 'tidyverse' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+    C:\Users\alvin\AppData\Local\Temp\RtmpSIDjdQ\downloaded_packages</code></pre>
+</div>
 </div>
 <p>Reading shapefiles that were exported from our qgis geopackage:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>desired_lines <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"data/geospatial"</span>, </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">layer =</span> <span class="st">"desired_lines"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>desired_lines <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"data/geospatial"</span>, </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">layer =</span> <span class="st">"desired_lines"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Reading layer `desired_lines' from data source 
-  `C:\Users\Kachel Lee\ka33rina\FYP\Analysis\Geographic Analysis\data\geospatial' 
+  `C:\Users\alvin\OneDrive\Documents\GitHub\FYP\Analysis\Geographic Analysis\data\geospatial' 
   using driver `ESRI Shapefile'
 Simple feature collection with 3904 features and 12 fields
 Geometry type: LINESTRING
@@ -253,17 +367,17 @@ Projected CRS: SVY21 / Singapore TM</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(desired_lines)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(desired_lines)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Geographic-Analysis_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>target_buildings <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"data/geospatial"</span>, </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">layer =</span> <span class="st">"target_buildings"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>target_buildings <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"data/geospatial"</span>, </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">layer =</span> <span class="st">"target_buildings"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Reading layer `target_buildings' from data source 
-  `C:\Users\Kachel Lee\ka33rina\FYP\Analysis\Geographic Analysis\data\geospatial' 
+  `C:\Users\alvin\OneDrive\Documents\GitHub\FYP\Analysis\Geographic Analysis\data\geospatial' 
   using driver `ESRI Shapefile'
 Simple feature collection with 9554 features and 7 fields (with 1 geometry empty)
 Geometry type: MULTIPOLYGON
@@ -273,17 +387,17 @@ Projected CRS: SVY21 / Singapore TM</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(target_buildings)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(target_buildings)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Geographic-Analysis_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>mpsz <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"data/geospatial"</span>,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">layer =</span> <span class="st">"MP14_SUBZONE_WEB_PL"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mpsz <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"data/geospatial"</span>,</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">layer =</span> <span class="st">"MP14_SUBZONE_WEB_PL"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Reading layer `MP14_SUBZONE_WEB_PL' from data source 
-  `C:\Users\Kachel Lee\ka33rina\FYP\Analysis\Geographic Analysis\data\geospatial' 
+  `C:\Users\alvin\OneDrive\Documents\GitHub\FYP\Analysis\Geographic Analysis\data\geospatial' 
   using driver `ESRI Shapefile'
 Simple feature collection with 323 features and 15 fields
 Geometry type: MULTIPOLYGON
@@ -293,10 +407,10 @@ Projected CRS: SVY21</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>mpsz2 <span class="ot">&lt;-</span> <span class="fu">as_Spatial</span>(mpsz)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>mpsz2 <span class="ot">&lt;-</span> <span class="fu">as_Spatial</span>(mpsz)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(mpsz2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(mpsz2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Coordinate Reference System:
   User input: SVY21 
@@ -340,13 +454,13 @@ PROJCRS["SVY21",
 </div>
 <p>extracting study areas:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pg <span class="ot">=</span> mpsz2[mpsz2<span class="sc">@</span>data<span class="sc">$</span>PLN_AREA_N <span class="sc">==</span> <span class="st">"PUNGGOL"</span>,]</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>amk <span class="ot">=</span> mpsz2[mpsz2<span class="sc">@</span>data<span class="sc">$</span>PLN_AREA_N <span class="sc">==</span> <span class="st">"ANG MO KIO"</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>pg <span class="ot">=</span> mpsz2[mpsz2<span class="sc">@</span>data<span class="sc">$</span>PLN_AREA_N <span class="sc">==</span> <span class="st">"PUNGGOL"</span>,]</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>amk <span class="ot">=</span> mpsz2[mpsz2<span class="sc">@</span>data<span class="sc">$</span>PLN_AREA_N <span class="sc">==</span> <span class="st">"ANG MO KIO"</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#par(mfrow=c(2,2), mar = c(4, 4, 2, 1))</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(pg, main = "Punggol")</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(amk, main = "Ang Mo Kio")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#par(mfrow=c(2,2), mar = c(4, 4, 2, 1))</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(pg, main = "Punggol")</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(amk, main = "Ang Mo Kio")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

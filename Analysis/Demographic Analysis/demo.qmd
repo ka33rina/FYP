@@ -74,3 +74,33 @@ In the nested chart, both groups, "Child + Young Adults" and "Middle Aged + Elde
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
 ```
+## Hypotheses
+
+1.  Areas with higher population densities at the subzone level will have a higher incidence of desired lines forming
+
+## Purpose of Dashboard
+
+This dashboard aims to provide a comprehensive overview by looking at factors such as age groups, gender, years etc for each area respectively.
+
+#### Overall Dashboard
+
+The first dashboard showcases our desire lines and population density data across the 6 subzones that we collected desire line data from (Cheng San, Chong Boon, Kebun Bahru, Punngol Town Centre, Townsvile and Waterway East). It also showcases the spread of our data for both population density and desire lines respectively in the form of a box-and-whiskers graph. Selecting the area on either map would allow the user to see the exact values for desire lines and poulation density on the box-and-whiskers graph.
+
+#### Relationship Dashboard
+
+The second dashboard showcases the relationship between our desire lines and 3 different variables - population density, area size and population respectively. Based on the Population Density & Desire Lines chart, although there is a upward trend observed, the p-value of this trend line is at 0.13. This means that the trend is not statically significant, indicating that there is no real relationship between Population Density & Desire Lines.
+
+As such, we would explore with the other variables to see if they have a statically significant relationship with desire lines. Firstly, based on the Area Size & Desire Lines chart, we noticed that there is an upward trend as well. However, plotting the trend line once again gives us a p-value of 0.27 which also implies that this trend is not statically significant, indicating that there is no real relationship between Area Size & Desire Lines.
+
+Lastly, based on the Population & Desire Lines chart, we observe that there is an upward trend as well. However, plotting the trend line this time gives us a significant p-value of only 0.007. This means that, with our alpha at 0.05, this trend is statically significant, indicating that there is a real relationship between Population & Desire Lines.
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1708631644494' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hy&#47;Hypothesis27new&#47;Dashboard12&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Hypothesis27new&#47;Dashboard12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hy&#47;Hypothesis27new&#47;Dashboard12&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1708631644494');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}            
+  // Call setVizSize initially and on window resize
+  setVizSize();
+  window.addEventListener('resize', setVizSize);
+
+
+
+var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
