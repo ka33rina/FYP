@@ -30,7 +30,7 @@ The project aligns with the goal of creating an inclusive and accessible urban e
 ## **Stakeholders**
 
 |                                    |                                                               |
-|--------------------------|---------------------------------------------|
+|---------------------------|---------------------------------------------|
 | **Sponsor**                        | URA - Ms Tan Chun Xiao (Planner under Design & Planning Lab)  |
 | **Users**                          | URA and the Design & Planning Lab team                        |
 | **Advisors/Practitioners/Mentors** | URA - Mr Wang Songyu                                          |
@@ -96,3 +96,5 @@ We would be utilising Scrum for our project with James as Scrum Master. We would
 -   **Tools/Platforms:** QGIS/ArcGIS, Jupyter Notebook, Tableau, GitHub, Jira
 
 -   **Techniques:** Clustering, Network Analysis & Centrality, Geoprocessing, Pedestrian Route Directness (PRD) ratio
+
+james has arrived
