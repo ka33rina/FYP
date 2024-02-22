@@ -112,9 +112,7 @@ title: "Data Exploration"
 
     -   **An example of the result:**
 
-        ![](images/pg-01.png)
-
-<!-- -->
+        ![](images/pg.png)
 
 -   **KDE for NORMALISED age distribution in Planning Area - Subzones**
 
@@ -238,9 +236,9 @@ title: "Data Exploration"
 
     -   **Both results:**
 
-        ![](images/barchart-01.png)
+        ![](images/barchart.png)
 
-        ![](images/householdtableau-01.png)
+        ![](images/householdtableau.png)
 
 #### **Dataset: Yearly Population Data 24-01-2024 (Ver 1.0)**
 
@@ -260,7 +258,7 @@ title: "Data Exploration"
 
         -   Here, to cut the noise: Only strong correlations +-\>0.70 are shown, and excludes ‘counting itself’ which explains the masked boxes in the correlation heatmap. 
 
-            ![](images/yearlypop-01.png)
+            ![](images/yearlypop.png)
 
 ## List of hypotheses formulated after EDA
 
