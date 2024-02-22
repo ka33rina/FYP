@@ -63,17 +63,17 @@ Members: James, Karina, Shanelle, Yao Quan, Alvin
 
 Total No. of desired lines found: ??
 
-+----------------------------------------+----------------------------------------------------------------------------------------------------------------+
-| ### Locational Characteristic:         | ### Key Amenities:                                                                                             |
-+----------------------------------------+----------------------------------------------------------------------------------------------------------------+
-| -   Northern part of Singapore         | -   Ang Mo Kio MRT Station                                                                                     |
-|                                        |                                                                                                                |
-| -   Quite hilly, numerous uphill walk  | -   Ang Mo Kio Bus Interchange                                                                                 |
-|                                        |                                                                                                                |
-| -   Most HDB building built in 1980s   | -   Ang Mo Kio Hub                                                                                             |
-|                                        |                                                                                                                |
-|                                        | -   Hawker Centres: Choon Boon Market and Food Centre/ Cheng San Market and Cook Food Centre/ Teck Ghee Court  |
-+----------------------------------------+----------------------------------------------------------------------------------------------------------------+
++----------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| ### Locational Characteristic:         | ### Key Amenities:                                                                                            |
++----------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| -   Northern part of Singapore         | -   Ang Mo Kio MRT Station                                                                                    |
+|                                        |                                                                                                               |
+| -   Quite hilly, numerous uphill walk  | -   Ang Mo Kio Bus Interchange                                                                                |
+|                                        |                                                                                                               |
+| -   Most HDB building built in 1980s   | -   Ang Mo Kio Hub                                                                                            |
+|                                        |                                                                                                               |
+|                                        | -   Hawker Centres: Choon Boon Market and Food Centre/ Cheng San Market and Cook Food Centre/ Teck Ghee Court |
++----------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
 ### Desire Lines 
 
