@@ -2,7 +2,7 @@
 title: "Population Demographic Analysis"
 ---
 
-## Hypotheses
+## Hypotheses 1 & 2
 
 1.  Has there been a change in the demographic composition across age groups in Ang Mo Kio over the past decade?
 
@@ -74,13 +74,13 @@ In the nested chart, both groups, "Child + Young Adults" and "Middle Aged + Elde
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
 ```
-## Hypotheses
+## Hypothesis 3
 
 1.  Areas with higher population densities at the subzone level will have a higher incidence of desired lines forming
 
 ## Purpose of Dashboard
 
-This dashboard aims to provide a comprehensive overview by looking at factors such as age groups, gender, years etc for each area respectively.
+This dashboard aims to provide a comprehensive overview by looking at the relationship between desire lines and variables like population density, area size and population.
 
 #### Overall Dashboard
 
