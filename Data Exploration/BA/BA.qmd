@@ -114,9 +114,8 @@ title: "Data Exploration"
 
         ![](images/pg-01.png)
 
-```{=html}
 <!-- -->
-```
+
 -   **KDE for NORMALISED age distribution in Planning Area - Subzones**
 
     -   **Used for:**
