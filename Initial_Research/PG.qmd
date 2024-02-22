@@ -9,4 +9,74 @@ execute:
 editor: visual
 ---
 
-# Punggol
+# 1st On-the-ground Research: Punggol West & Punggol Shore  
+
+Conducted on: 30/1/2024
+
+Members: James, Karina, Shanelle
+
+Total No. of desired lines found: 39
+
+![](images/clipboard-2449319061.png)
+
++-------------------------------------------------+--------------------------------------------------+
+| ### Locational Characteristic:                  | ### Key Amenities:                               |
++-------------------------------------------------+--------------------------------------------------+
+| -   Northern eastern part of Singapore          | -   Punggol MRT Station                          |
+|                                                 |                                                  |
+| -   A relatively new neighbourhood/ HDB estate  | -   Punggol/ Soo Teck/ Damai/ Oasis LRT station  |
+|                                                 |                                                  |
+| -   Most HDB buildings built in 2010s           | -   Punggol Bus Interchange                      |
+|                                                 |                                                  |
+|                                                 | -   Punggol PolyClinic                           |
+|                                                 |                                                  |
+|                                                 | -   Shopping Mall: Oasis Terrace                 |
++-------------------------------------------------+--------------------------------------------------+
+
+### Desired Lines 
+
+### Example: 
+
++-----------------------------------------------------+--------------------------------------+
+| Description                                         | Photos                               |
++=====================================================+======================================+
+| Commonly found near internal car-based streets      | ![](images/clipboard-2965123620.png) |
+|                                                     |                                      |
+|                                                     | ![](images/clipboard-4042708500.png) |
+|                                                     |                                      |
+|                                                     | ![](images/clipboard-3788489660.png) |
++-----------------------------------------------------+--------------------------------------+
+| Commonly found near the playgorunds/ exercise area  | ![](images/clipboard-3160906997.png) |
+|                                                     |                                      |
+|                                                     | ![](images/clipboard-2507447476.png) |
++-----------------------------------------------------+--------------------------------------+
+| Commonly found near roundabouts                     | ![](images/clipboard-4014182519.png) |
+|                                                     |                                      |
+|                                                     | ![](images/clipboard-2918582552.png) |
+|                                                     |                                      |
+|                                                     | ![](images/clipboard-150381246.png)  |
++-----------------------------------------------------+--------------------------------------+
+
+## Interviewing with Residents: 
+
+## Observations from Punggol West:
+
+[**In terms of walkability:**]{.underline}
+
+-   Desired paths are commonly found near car-based street and carparks
+
+    Assumption: HDB’s internal car-based streets → not walking-friendly to residents 
+
+-   Sheltered walkways are commonly found
+
+    E.g. From Punggol MRT/ Bus interchange to nearby estates  
+
+    Assumption: Consideration of the tropical weather in Singapore
+
+[**In terms of amenities:**]{.underline}
+
+-   Eateries are usually located below the the HDB blocks 
+
+-   Reachable in walking distances within 5-10 minutes 
+
+-   Sufficient parks/ recreational facilities but lack of maintenance
