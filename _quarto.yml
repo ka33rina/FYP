@@ -13,7 +13,7 @@ website:
       - text: Initial Research  
         menu: 
           - text: Literature Review
-            href: "Initial_Research/literature_review.html"
+            href: "Initial_Research/Literature_Review.html"
           - text: On-the-ground Research
             href: "Initial_Research/On-the-ground_Research.html"
           - text: Ang Mo Kio

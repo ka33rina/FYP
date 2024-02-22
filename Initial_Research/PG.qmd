@@ -17,7 +17,11 @@ Members: James, Karina, Shanelle
 
 Total No. of desired lines found: 39
 
-![](images/clipboard-2449319061.png)
++--------------------------------------+-------------------------------------+
+| ## Punggol West                      | ## Punggol Shore                    |
++======================================+=====================================+
+| ![](images/clipboard-1420105062.png) | ![](images/clipboard-924838719.png) |
++--------------------------------------+-------------------------------------+
 
 +-------------------------------------------------+--------------------------------------------------+
 | ### Locational Characteristic:                  | ### Key Amenities:                               |
@@ -58,6 +62,22 @@ Total No. of desired lines found: 39
 +-----------------------------------------------------+--------------------------------------+
 
 ## Interviewing with Residents: 
+
++--------------------------------------------------+----------------------------------+------------------------------------------------------------------------------------------------------+
+| Demographics                                     | **Overall Walking Experience:**  | **Things to be improved:**                                                                           |
++==================================================+==================================+======================================================================================================+
+| ![](images/clipboard-2289798628.png){width="97"} | Pleasure but more can be done    | -   The cover of sheltered walkways are insufficient: has to go a whole big round when it’s raining  |
+|                                                  |                                  |                                                                                                      |
+| 60+ years old couple, retired                    |                                  | -   Fitness facilities within the estate is lack of maintenance                                      |
++--------------------------------------------------+----------------------------------+------------------------------------------------------------------------------------------------------+
+| ![](images/clipboard-2512642389.png){width="97"} | So far so good                   | -   Slippery pathway from MRT station when raining due to the exterior design of MRT station         |
+|                                                  |                                  |                                                                                                      |
+| 60 years old man, semi-retired                   |                                  | -   Sidewalks seldom have conflicts between pedestrians and cyclists                                 |
++--------------------------------------------------+----------------------------------+------------------------------------------------------------------------------------------------------+
+| ![](images/clipboard-1483797230.png){width="97"} | So far so good                   | -   NIL                                                                                              |
+|                                                  |                                  |                                                                                                      |
+| 34 years old woman, housewife with 1 child       |                                  |                                                                                                      |
++--------------------------------------------------+----------------------------------+------------------------------------------------------------------------------------------------------+
 
 ## Observations from Punggol West:
 
