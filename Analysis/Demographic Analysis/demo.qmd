@@ -2,13 +2,13 @@
 title: "Population Demographic Analysis"
 ---
 
-## Hypotheses:
+## Hypotheses
 
 1.  Has there been a change in the demographic composition across age groups in Ang Mo Kio over the past decade?
 
 2.  Has there been a change in the demographic composition across age groups in Punggol over the past decade?
 
-## Purpose of Dashboard: 
+## Purpose of Dashboard
 
 This dashboard aims to provide a comprehensive overview by looking at factors such as age groups, gender, years etc for each area respectively.
 
@@ -25,6 +25,52 @@ Based on the Age Group Trend chart in Punggol, there has been a notable change i
 In the nested chart, both groups, "Child + Young Adults" and "Middle Aged + Elderly," experience significant population growth over the years, indicating demographic changes in these age categories. The overall trend indicates an increasing population in Punggol, with both younger and older age groups contributing to this growth. Lastly, the data suggests a generally balanced gender distribution across age groups, with some variations in specific age brackets. In the working-age groups, there are variations, with some age groups having more females (25-34), and others having more males (40-49).
 
 ```{=html}
-<div class='tableauPlaceholder' id='viz1708567052110' style='position: relative'><noscript><a href='#'><img alt='Map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationDemographicAnalysis&#47;Dashboard12&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PopulationDemographicAnalysis&#47;Dashboard12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationDemographicAnalysis&#47;Dashboard12&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1708567052110');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1300px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1300px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<div class='tableauPlaceholder' id='viz1708569042257' style='position: relative'>
+  <noscript>
+    <a href='#'>
+      <img alt='Map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationDemographicAnalysis&#47;Dashboard12&#47;1_rss.png' style='border: none' />
+    </a>
+  </noscript>
+  <object class='tableauViz' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='PopulationDemographicAnalysis&#47;Dashboard12' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationDemographicAnalysis&#47;Dashboard12&#47;1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+    <param name='filter' value='publish=yes' />
+  </object>
+</div>
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1708569042257');
+  var vizElement = divElement.getElementsByTagName('object')[0];
 
+  function setVizSize() {
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '1300px';
+      vizElement.style.height = '827px';
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '827px';
+    } else {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '727px';
+    }
+  }
+
+  // Call setVizSize initially and on window resize
+  setVizSize();
+  window.addEventListener('resize', setVizSize);
+
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
 ```
