@@ -13,14 +13,14 @@ Through comprehensive on-the-ground research and interviews with residents, we h
 
 Below, we will summarize our findings and analysis for Ang Mo Kio and Punggol, offering valuable insights into their current walkability status and potential avenues for enhancement. Stay tuned as we uncover key trends and opportunities to create more pedestrian-friendly and livable neighborhoods in Ang Mo Kio and Punggol.
 
-# Ang Mo Kio
+# Ang Mo Kio 
 
-Click [here](#https://32-step-ahead-solutions.netlify.app/initial_research/amk) to find about more!
+Click [here](AMK.html) to find about more!
 
 ![](amk.jpg){fig-align="center"}
 
 # Punggol
 
-Click here to find about more!
+Click [here](PG.html) to find about more!
 
 ![](our-towns-punggol-3.png){fig-align="center"}
