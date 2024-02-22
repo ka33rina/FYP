@@ -25,7 +25,7 @@ website:
       - text: Data Exploration
         menu: 
           - text: BA
-            href: "Data Exploration/BA.html"
+            href: "Data Exploration/BA/BA.html"
           - text: SMT
             href: "Data Exploration/"
           
