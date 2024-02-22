@@ -96,5 +96,3 @@ We would be utilising Scrum for our project with James as Scrum Master. We would
 -   **Tools/Platforms:** QGIS/ArcGIS, Jupyter Notebook, Tableau, GitHub, Jira
 
 -   **Techniques:** Clustering, Network Analysis & Centrality, Geoprocessing, Pedestrian Route Directness (PRD) ratio
-
-james has arrived
