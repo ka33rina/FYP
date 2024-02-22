@@ -262,7 +262,7 @@ title: "Data Exploration"
 
 ## List of hypotheses formulated after EDA
 
-\*Those bolded are the ones we have decided to explore further
+*\*Those bolded are the ones we have decided to explore further*
 
 1.  ‘There is no significant relationship between the 'Age Group' and 'Planning Area' in 'Ang Mo Kio'.’
 
