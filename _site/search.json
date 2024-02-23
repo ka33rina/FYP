@@ -158,7 +158,11 @@
     "href": "Initial_Research/Literature_Review.html",
     "title": "Literature Review",
     "section": "",
+<<<<<<< HEAD
     "text": "Welcome to the Literature Review page, where we dive into research on walkability planning and desired path formation. Here, we explore studies and findings to understand the factors influencing pedestrian experiences and preferences. Through this review, we aim to gain valuable insights that inform the creation of more accessible and enjoyable urban environments.\n\n\n\nTitle\nAuthor\nSource\n\n\n\n\nDesign for walkable neighbourhoods in Singapore using Form-based Codes\nYe Zhang, Simona Azzali, Patrick Janssen, and Rudi Stouffs\nDepartment of Architecture, School of Design and Environment, National University of Singapore\nhttps://sciforum.net/paper/view/5934\n\n\nEnhancing the Pedestrian Experience in Singapore:\nA Closer Look at MRT Transfers and CBD Walkability\nYew Chin Leow\nMassachusetts Institute of Technology. Department of Urban Studies and Planning https://dspace.mit.edu/handle/1721.1/44205"
+=======
+    "text": "Welcome to the Literature Review page, where we dive into research on walkability planning and desired path formation. Here, we explore studies and findings to understand the factors influencing pedestrian experiences and preferences. Through this review, we aim to gain valuable insights that inform the creation of more accessible and enjoyable urban environments.\n\n\n\nTitle\nAuthor\nSource\nFindings\n\n\n\n\nDesign for walkable neighbourhoods in Singapore using Form-based Codes\nYe Zhang, Simona Azzali, Patrick Janssen, and Rudi Stouffs\nDepartment of Architecture, School of Design and Environment, National University of Singapore\nhttps://sciforum.net/paper/view/5934\n\n\n\nEnhancing the Pedestrian Experience in Singapore:\nA Closer Look at MRT Transfers and CBD Walkability\nYew Chin Leow\nMassachusetts Institute of Technology. Department of Urban Studies and Planning https://dspace.mit.edu/handle/1721.1/44205"
+>>>>>>> f39ffff2215bda26a78b7d887f70158f5f5c8fe4
   },
   {
     "objectID": "Initial_Research/PG.html",
@@ -194,6 +198,7 @@
     "title": "Population Demographic Analysis",
     "section": "Purpose of Dashboard",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "text": "Purpose of Dashboard\nThis dashboard aims to provide a comprehensive overview by looking at the relationship between desire lines and variables like population density, area size and population.\n\nOverall Dashboard\nThe first dashboard showcases our desire lines and population density data across the 6 subzones that we collected desire line data from (Cheng San, Chong Boon, Kebun Bahru, Punngol Town Centre, Townsvile and Waterway East). It also showcases the spread of our data for both population density and desire lines respectively in the form of a box-and-whiskers graph. Selecting the area on either map would allow the user to see the exact values for desire lines and poulation density on the box-and-whiskers graph.\n\n\nRelationship Dashboard\nThe second dashboard showcases the relationship between our desire lines and 3 different variables - population density, area size and population respectively. Based on the Population Density & Desire Lines chart, although there is a upward trend observed, the p-value of this trend line is at 0.13. This means that the trend is not statically significant, indicating that there is no real relationship between Population Density & Desire Lines.\nAs such, we would explore with the other variables to see if they have a statically significant relationship with desire lines. Firstly, based on the Area Size & Desire Lines chart, we noticed that there is an upward trend as well. However, plotting the trend line once again gives us a p-value of 0.27 which also implies that this trend is not statically significant, indicating that there is no real relationship between Area Size & Desire Lines.\nLastly, based on the Population & Desire Lines chart, we observe that there is an upward trend as well. However, plotting the trend line this time gives us a significant p-value of only 0.007. This means that, with our alpha at 0.05, this trend is statically significant, indicating that there is a real relationship between Population & Desire Lines."
   },
   {
@@ -224,6 +229,8 @@
     "section": "",
     "text": "landuse &lt;- st_read(dsn = \"data/Data_geospatial/\", layer = \"FYP_target_landuse_AMK_1\")\n\n\nplot(st_geometry(landuse))\n\n\ntm_shape(landuse) +\n  tm_borders() +\n  tm_layout(legend.position = c(\"left\", \"bottom\"))\n\n\n#tmap_options(tiles = \"OpenStreetMap\")\n\n# Plot the data using tmap\ntm_shape(landuse) +\n  tm_borders() +\n  tm_layout(legend.position = c(\"left\", \"bottom\"))"
 =======
+=======
+>>>>>>> f39ffff2215bda26a78b7d887f70158f5f5c8fe4
     "text": "Purpose of Dashboard\nThis dashboard aims to provide a comprehensive overview by looking at factors such as age groups, gender, years etc for each area respectively.\n\nOverall Dashboard\nThe first dashboard showcases our desire lines and population density data across the 6 subzones that we collected desire line data from (Cheng San, Chong Boon, Kebun Bahru, Punngol Town Centre, Townsvile and Waterway East). It also showcases the spread of our data for both population density and desire lines respectively in the form of a box-and-whiskers graph. Selecting the area on either map would allow the user to see the exact values for desire lines and poulation density on the box-and-whiskers graph.\n\n\nRelationship Dashboard\nThe second dashboard showcases the relationship between our desire lines and 3 different variables - population density, area size and population respectively. Based on the Population Density & Desire Lines chart, although there is a upward trend observed, the p-value of this trend line is at 0.13. This means that the trend is not statically significant, indicating that there is no real relationship between Population Density & Desire Lines.\nAs such, we would explore with the other variables to see if they have a statically significant relationship with desire lines. Firstly, based on the Area Size & Desire Lines chart, we noticed that there is an upward trend as well. However, plotting the trend line once again gives us a p-value of 0.27 which also implies that this trend is not statically significant, indicating that there is no real relationship between Area Size & Desire Lines.\nLastly, based on the Population & Desire Lines chart, we observe that there is an upward trend as well. However, plotting the trend line this time gives us a significant p-value of only 0.007. This means that, with our alpha at 0.05, this trend is statically significant, indicating that there is a real relationship between Population & Desire Lines."
   },
   {
@@ -232,6 +239,9 @@
     "title": "32_Step_Ahead_Solutions",
     "section": "",
     "text": "<!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’>"
+<<<<<<< HEAD
+>>>>>>> f39ffff2215bda26a78b7d887f70158f5f5c8fe4
+=======
 >>>>>>> f39ffff2215bda26a78b7d887f70158f5f5c8fe4
   }
 ]

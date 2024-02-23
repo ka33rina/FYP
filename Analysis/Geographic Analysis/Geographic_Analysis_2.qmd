@@ -10,6 +10,7 @@ editor: visual
 ---
 
 ```{r}
+<<<<<<< HEAD
 pacman::p_load(sf, tmap, spNetwork, tidyverse, sp)
 ```
 
@@ -28,6 +29,92 @@ plot(mpsz_14["LU_DESC"])
 
 ```{r}
 head(mpsz_14) 
+=======
+pacman::p_load(sf, tmap, spNetwork, classInt, virdis, tidyverse, sp)
+```
+
+```{r}
+mpsz <- st_read(dsn = "data/geospatial/MPSZ", layer="MPSZ-2019")
+```
+
+```{r}
+mpsz_3414 <- st_transform(mpsz, 3414)
+```
+
+```{r}
+summary(mpsz_3414)
+```
+
+```{r}
+plot(st_geometry(mpsz_3414))
+```
+
+```{r}
+landuse_layer <- st_read("data/geospatial/MPSZ/MasterPlan2019LandUselayer.geojson")
+```
+
+```{r}
+landuse_layer_3414 <- st_transform(landuse_layer, 3414)
+```
+
+```{r}
+summary(landuse_layer_3414)
+```
+
+```{r}
+head(landuse_layer_3414)
+```
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addPolygons(data = landuse_layer, 
+              color = "black",
+              stroke = TRUE,
+              fillOpacity = 0.7,
+              popup = ~paste("Name:", Name, "<br>",
+                             "Description:", Description))
+```
+
+```{r}
+# Assuming `data` is your data frame containing the `Description` column
+# Extract land use from Description column using regular expressions
+land_use <- gsub(".*<th>LU_DESC<\\/th> <td>(.*?)<\\/td>.*", "\\1", landuse_layer_3414$Description)
+
+# Print the extracted land use
+print(land_use)
+
+```
+
+```{r}
+landuse_layer_3414$Land_Use <- gsub(".*<th>LU_DESC<\\/th> <td>(.*?)<\\/td>.*", "\\1", landuse_layer_3414$Description)
+
+leaflet() %>%
+  addTiles() %>%
+  addPolygons(data = data, 
+              fillColor = ~Land_Use,  # Use land use as fill color
+              color = "black",
+              stroke = TRUE,
+              fillOpacity = 0.7,
+              popup = ~paste("Name:", Name, "<br>",
+                             "Description:", Description,
+                             "Land Use:", Land_Use))
+```
+
+```{r}
+mpsz_14 <- st_read(dsn = "data/MasterPlan2014LandUseSHP/", layer = "G_MP14_LAND_USE_PL") %>% st_transform(crs =3414)
+```
+
+```{r}
+plot(mpsz_14["LU_DESC"])
+
+```
+
+```{r}
+mpsz_14_sf <- st_as_sf(mpsz_14,
+                      coords = c("X_ADDR", "Y_ADDR"),
+                      crs = 3414) 
+>>>>>>> f39ffff2215bda26a78b7d887f70158f5f5c8fe4
 ```
 
 ```{r}
@@ -35,6 +122,7 @@ head(mpsz_14)
 ```
 
 ```{r}
+<<<<<<< HEAD
 xmin <- 34038.56
 xmax <- 38882.85
 ymin <- 40941.11
@@ -63,10 +151,28 @@ roads <- st_read(dsn="data/Data_geospatial", layer="gis_osm_roads_free_1") %>%
 #| eval: false
 sg_sf <- mpsz_14 %>% st_union()
 plot(sg_sf)
+=======
+st_crs(punggol_polygon)
+```
+
+```{r}
+library(sf)
+
+# Define the bounding box coordinates for Punggol
+punggol_bbox <- st_bbox(c(xmin = 103.8994, ymin = 1.3862, xmax = 103.9269, ymax = 1.4249))
+
+# Convert the bounding box to a polygon
+punggol_polygon <- st_as_sfc(st_bbox(punggol_bbox))
+
+# Filter the dataset to include only features within the Punggol area
+punggol_area <- st_intersection(mpsz_14, punggol_polygon)
+
+>>>>>>> f39ffff2215bda26a78b7d887f70158f5f5c8fe4
 
 ```
 
 ```{r}
+<<<<<<< HEAD
 #| eval: false
 sg_roads <- st_intersection(roads,sg_sf)
 ```
@@ -89,4 +195,9 @@ roads_pg <- sg_roads[st_intersection(sg_roads, punggol_data), ]
 ```{r}
 #| eval: false
 plot(roads_pg)
+=======
+# Transform the CRS of mpsz to match the CRS of punggol_polygon
+mpsz_transformed <- st_transform(mpsz_14, st_crs(punggol_polygon))
+
+>>>>>>> f39ffff2215bda26a78b7d887f70158f5f5c8fe4
 ```
