@@ -10,15 +10,24 @@ website:
           - text: Our Proposal
             href: "Proposal/fyp_proposal.html"
           
-      - text: Initial Research  
+      - text: Research  
         menu: 
+          - text: Literature Review
+            href: "Initial_Research/Literature_Review.html"
           - text: On-the-ground Research
             href: "Initial_Research/On-the-ground_Research.html"
-            menu: 
-              - text: Ang Mo Kio
-                href: "Initial_Research/AMK.html"
-              - text: Punggol
-                href: "Initial_Research/PG.html"
+          - text: Ang Mo Kio
+            href: "Initial_Research/AMK.html"
+          - text: Punggol
+            href: "Initial_Research/PG.html"
+          
+            
+      - text: Data Exploration
+        menu: 
+          - text: BA
+            href: "Data Exploration/BA/BA.html"
+          - text: SMT
+            href: "Data Exploration/"
           
       - text: Analysis 
         menu: 
@@ -30,8 +39,8 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About us 
+      #href: about.qmd
+      #text: About us 
 
 format:
   html:

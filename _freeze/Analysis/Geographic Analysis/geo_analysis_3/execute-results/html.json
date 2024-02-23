@@ -1,0 +1,14 @@
+{
+  "hash": "7fc0d609cca27b58754c800cae41225c",
+  "result": {
+    "markdown": "---\ntitle: \"Geo_analysis_3\"\ndate: \"2024-02-23\"\nformat: html\nexecute: \n  message: false\n  warning: false\n  freeze: true\neditor: visual\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlanduse <- st_read(dsn = \"data/Data_geospatial/\", layer = \"FYP_target_landuse_AMK_1\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(st_geometry(landuse))\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ntm_shape(landuse) +\n  tm_borders() +\n  tm_layout(legend.position = c(\"left\", \"bottom\"))\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\n#tmap_options(tiles = \"OpenStreetMap\")\n\n# Plot the data using tmap\ntm_shape(landuse) +\n  tm_borders() +\n  tm_layout(legend.position = c(\"left\", \"bottom\"))\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

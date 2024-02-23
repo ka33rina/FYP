@@ -1,0 +1,92 @@
+---
+title: "Geospatial_Analysis_2"
+date: "`r Sys.Date()`"
+format: html
+execute: 
+  message: false
+  warning: false
+  freeze: true
+editor: visual
+---
+
+```{r}
+pacman::p_load(sf, tmap, spNetwork, tidyverse, sp)
+```
+
+```{r}
+mpsz_14 <- st_read(dsn = "data/MasterPlan2014LandUseSHP/", layer = "G_MP14_LAND_USE_PL") %>% st_transform(crs = 3414)
+```
+
+```{r}
+st_crs(mpsz_14)
+```
+
+```{r}
+#| eval: false
+plot(mpsz_14["LU_DESC"])
+```
+
+```{r}
+head(mpsz_14) 
+```
+
+```{r}
+head(mpsz_14)
+```
+
+```{r}
+xmin <- 34038.56
+xmax <- 38882.85
+ymin <- 40941.11
+ymax <- 44801.27
+
+
+# Filter the data based on the bounding box
+punggol_data <- mpsz_14[mpsz_14$X_ADDR >= xmin & mpsz_14$X_ADDR <= xmax & mpsz_14$Y_ADDR >= ymin & mpsz_14$Y_ADDR <= ymax, ]
+
+# View the filtered data
+print(punggol_data)
+```
+
+```{r}
+#| eval: false
+plot(punggol_data['LU_DESC'])
+```
+
+```{r}
+#| eval: false
+roads <- st_read(dsn="data/Data_geospatial", layer="gis_osm_roads_free_1") %>%
+  st_transform(crs=3414)
+```
+
+```{r}
+#| eval: false
+sg_sf <- mpsz_14 %>% st_union()
+plot(sg_sf)
+
+```
+
+```{r}
+#| eval: false
+sg_roads <- st_intersection(roads,sg_sf)
+```
+
+```{r}
+#| eval: false
+write_rds(sg_roads,"data/rds/sg_roads.rds")
+```
+
+```{r}
+#| eval: false
+sg_roads <- read_rds("data/rds/sg_roads.rds")
+```
+
+```{r}
+#| eval: false 
+roads_pg <- sg_roads[st_intersection(sg_roads, punggol_data), ]
+```
+
+```{r}
+#| eval: false
+plot(roads_pg)
+```

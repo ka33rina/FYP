@@ -1,0 +1,37 @@
+---
+title: "Geo_analysis_3"
+date: "`r Sys.Date()`"
+format: html
+execute: 
+  message: false
+  warning: false
+  freeze: true
+editor: visual
+---
+
+```{r}
+#| eval: false
+landuse <- st_read(dsn = "data/Data_geospatial/", layer = "FYP_target_landuse_AMK_1")
+```
+
+```{r}
+#| eval: false
+plot(st_geometry(landuse))
+```
+
+```{r}
+#| eval: false
+tm_shape(landuse) +
+  tm_borders() +
+  tm_layout(legend.position = c("left", "bottom"))
+```
+
+```{r}
+#| eval: false
+#tmap_options(tiles = "OpenStreetMap")
+
+# Plot the data using tmap
+tm_shape(landuse) +
+  tm_borders() +
+  tm_layout(legend.position = c("left", "bottom"))
+```

@@ -15,8 +15,12 @@ Below, we will summarize our findings and analysis for Ang Mo Kio and Punggol, o
 
 # Ang Mo Kio
 
+Click [here](AMK.html) to find about more!
+
 ![](amk.jpg){fig-align="center"}
 
 # Punggol
+
+Click [here](PG.html) to find about more!
 
 ![](our-towns-punggol-3.png){fig-align="center"}

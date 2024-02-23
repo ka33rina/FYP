@@ -1,0 +1,21 @@
+---
+title: "Literature Review"
+---
+
+Welcome to the Literature Review page, where we dive into research on walkability planning and desired path formation. Here, we explore studies and findings to understand the factors influencing pedestrian experiences and preferences. Through this review, we aim to gain valuable insights that inform the creation of more accessible and enjoyable urban environments.
+
++------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Title                                                                  | Author                                                     | Source                                                                                                                       |
++========================================================================+============================================================+==============================================================================================================================+
+| Design for walkable neighbourhoods in Singapore using Form-based Codes | Ye Zhang, Simona Azzali, Patrick Janssen, and Rudi Stouffs | Department of Architecture, School of Design and Environment, National University of Singapore                               |
+|                                                                        |                                                            |                                                                                                                              |
+|                                                                        |                                                            | <https://sciforum.net/paper/view/5934>                                                                                       |
++------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Enhancing the Pedestrian Experience in Singapore:                      | Yew Chin Leow                                              | Massachusetts Institute of Technology. Department of Urban Studies and Planning <https://dspace.mit.edu/handle/1721.1/44205> |
+|                                                                        |                                                            |                                                                                                                              |
+| A Closer Look at MRT Transfers and CBD Walkability                     |                                                            |                                                                                                                              |
++------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+|                                                                        |                                                            |                                                                                                                              |
++------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+|                                                                        |                                                            |                                                                                                                              |
++------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
