@@ -1,0 +1,159 @@
+---
+title: "Geospatial Analysis using OneMap Data"
+execute: 
+  warning: false
+date: "`r Sys.Date()`"
+---
+
+
+# Data Analysis
+
+
+```{r}
+pacman::p_load(arrow, lubridate, maptools, sp, sf, raster, spatstat, tmap, classInt, viridis, tidyverse, spNetwork)
+```
+
+
+Reading shapefiles that were exported from our qgis geopackage:
+
+
+```{r}
+desired_lines <- st_read(dsn = "data/geospatial", 
+                 layer = "desired_lines")
+```
+
+```{r}
+dl_pg <- st_read(dsn = "data/geospatial", 
+                 layer = "dl_pg")
+```
+
+```{r}
+plot(desired_lines)
+```
+
+```{r}
+plot(dl_pg)
+```
+
+```{r}
+# Define colors based on the value of the "fclass" column
+line_colors <- ifelse(dl_pg$fclass == "dl", "red", "green")
+
+dl_class <- dl_pg["fclass"]
+
+# Plot with custom colors
+plot(dl_class, col = line_colors, main = "Desired Lines in Punggol")
+```
+
+```{r}
+library(ggplot2)
+#install.packages("ggmap")
+library(ggmap)
+```
+
+```{r}
+tmap_mode('view')
+
+# Define basemaps
+osm_basemap <- tm_basemap(server = "OpenStreetMap.HOT")
+imagery_basemap <- tm_basemap(server = "Esri.WorldImagery")
+
+# Plot dl_class over OpenStreetMap basemap
+dl_map <- osm_basemap +
+  tm_shape(dl_class) +
+  tm_lines(col = "red", lwd = 2) +  # Adjust line color and width as needed
+  tmap_options(check.and.fix = TRUE)
+
+# View the map
+dl_map
+```
+
+```{r}
+# Plot dl_class over OpenStreetMap basemap with custom colors
+dl_map2 <- osm_basemap +
+  tm_shape(dl_class) +
+  tm_lines(col = ifelse(dl_pg$fclass == "dl", "red", "green"), lwd = 2) +  # Include color logic here
+  tmap_options(check.and.fix = TRUE)
+
+# View the map
+dl_map2
+```
+
+```{r}
+target_buildings <- st_read(dsn = "data/geospatial", 
+                 layer = "target_buildings")
+```
+
+```{r}
+st_crs(target_buildings)
+```
+
+```{r}
+tb_cat <- target_buildings["Categorize"]
+```
+
+```{r}
+plot(tb_cat, key.width = lcm(6.32))
+```
+
+```{r}
+mpsz <- st_read(dsn = "data/geospatial/MPSZ", layer = "MPSZ-2019")
+```
+
+```{r}
+st_crs(mpsz)
+```
+
+```{r}
+mpsz3414 <- st_transform(mpsz, 3414)
+```
+
+```{r}
+st_crs(mpsz3414)
+```
+
+```{r}
+plot(mpsz3414)
+```
+
+```{r}
+plot(st_geometry(mpsz3414))
+```
+
+```{r}
+plot(mpsz3414["PLN_AREA_N"])
+```
+
+```{r}
+mpsz2 <- as_Spatial(mpsz3414)
+```
+
+
+extracting study areas:
+
+
+```{r}
+pg = mpsz2[mpsz2@data$PLN_AREA_N == "PUNGGOL",]
+amk = mpsz2[mpsz2@data$PLN_AREA_N == "ANG MO KIO",]
+```
+
+```{r}
+par(mfrow=c(2,2), mar = c(4, 4, 2, 1))
+plot(pg, main = "Punggol")
+plot(amk, main = "Ang Mo Kio")
+```
+
+```{r}
+st_crs(pg)
+```
+
+```{r}
+pg_sp = as(pg, "SpatialPolygons")
+amk_sp = as(amk, "SpatialPolygons")
+```
+
+```{r}
+pg_owin = as(pg_sp, "owin")
+amk_owin = as(amk_sp, "owin")
+```
+

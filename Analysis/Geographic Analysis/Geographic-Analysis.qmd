@@ -19,7 +19,60 @@ desired_lines <- st_read(dsn = "data/geospatial",
 ```
 
 ```{r}
+dl_pg <- st_read(dsn = "data/geospatial", 
+                 layer = "dl_pg")
+```
+
+```{r}
 plot(desired_lines)
+```
+
+```{r}
+plot(dl_pg)
+```
+
+```{r}
+# Define colors based on the value of the "fclass" column
+line_colors <- ifelse(dl_pg$fclass == "dl", "red", "green")
+
+dl_class <- dl_pg["fclass"]
+
+# Plot with custom colors
+plot(dl_class, col = line_colors, main = "Desired Lines in Punggol")
+```
+
+```{r}
+library(ggplot2)
+#install.packages("ggmap")
+library(ggmap)
+```
+
+```{r}
+tmap_mode('view')
+
+# Define basemaps
+osm_basemap <- tm_basemap(server = "OpenStreetMap.HOT")
+imagery_basemap <- tm_basemap(server = "Esri.WorldImagery")
+
+# Plot dl_class over OpenStreetMap basemap
+dl_map <- osm_basemap +
+  tm_shape(dl_class) +
+  tm_lines(col = "red", lwd = 2) +  # Adjust line color and width as needed
+  tmap_options(check.and.fix = TRUE)
+
+# View the map
+dl_map
+```
+
+```{r}
+# Plot dl_class over OpenStreetMap basemap with custom colors
+dl_map2 <- osm_basemap +
+  tm_shape(dl_class) +
+  tm_lines(col = ifelse(dl_pg$fclass == "dl", "red", "green"), lwd = 2) +  # Include color logic here
+  tmap_options(check.and.fix = TRUE)
+
+# View the map
+dl_map2
 ```
 
 ```{r}
@@ -88,24 +141,6 @@ plot(amk, main = "Ang Mo Kio")
 st_crs(pg)
 ```
 
-
-```{r}
-buildings_pg <- target_buildings3414[st_intersection(target_buildings3414, pg), ]
-```
-
-```{r}
-tmap_mode("plot")
-
-
-tm_basemap("OpenStreetMap")+
-  tm_shape(downtown_core) +
-    tm_borders(lwd=0.5) +
-  tm_shape(roads_downtown_core) +
-    tm_lines() +
-  tm_shape(origin_downtown_core) +
-    tm_dots()
-```
-
 ```{r}
 pg_sp = as(pg, "SpatialPolygons")
 amk_sp = as(amk, "SpatialPolygons")
@@ -115,13 +150,3 @@ amk_sp = as(amk, "SpatialPolygons")
 pg_owin = as(pg_sp, "owin")
 amk_owin = as(amk_sp, "owin")
 ```
-
-
-
-
-
-
-
-
-
-
